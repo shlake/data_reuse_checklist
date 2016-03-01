@@ -1,2 +1,2 @@
-# checklist
-[beta] checklist project for temp checking open data/source projects
+## MSL Checklist
+checklist template for data reuse
