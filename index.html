@@ -57,7 +57,7 @@
     <div id="menu" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a href="https://auremoser.github.io/checklist" class="navbar-brand">Data Re-use Checklist</a>
+                <a href="https://auremoser.github.io/checklist" class="navbar-brand">Planning for Data Reuse Checklist</a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -67,7 +67,7 @@
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://auremoser.github.io/checklist">Checklist</a></li>
-                    <li><a href="https://docs.google.com/presentation/d/1kZd-ZD5lru5a7jIbyi9q8cBYCCAKRnIBSRvixYFtoF0/edit?pref=2&pli=1#slide=id.g1088c5b110_0_183" target="_blank">Dec</a></li>
+                    <li><a href="https://docs.google.com/presentation/d/1kZd-ZD5lru5a7jIbyi9q8cBYCCAKRnIBSRvixYFtoF0/edit?pref=2&pli=1#slide=id.g1088c5b110_0_183" target="_blank">Deck</a></li>
                     <li><a href="http://mozillascience.github.io/working-open-workshop/data_reuse/" target="_blank">Handout</a></li>
                     <li><a href="https://github.com/mozillascience/working-open-workshop/blob/gh-pages/handouts/data_reuse_plan_template.md" target="_blank">Template</a></li>
                     <li><a href="references.html">References</a></li>
@@ -81,7 +81,7 @@
         </div>
     </div>
 
-    
+
         <div class="container-fluid">
             <div class="row">
                 <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
@@ -103,29 +103,54 @@
 
                 <section class="documentation col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
                     <h2 id="start">Getting Started</h2>
-                    <p>This checklist is designed to help you understand what someone outside your research project (or you in 5-10 years) would need to know about your data in order to build on your work.</p>
+                    <p>This checklist is designed to help you understand what someone outside your research project
+                      (or you in 5-10 years) would need to know about your data in order to build on your work.</p>
                     <p><img src="img/journal.png" style="width:50%;" alt="" /></p>
                     <h6 style="width:50%;">Image attribution: Roche DG, Lanfear R, Binning SA, Haff TM, Schwanz LE, et al. (2014) Troubleshooting Public Data Archiving: Suggestions to Increase Participation.  PLoS Biol 12(1): e1001779. <a href="doi:10.1371/journal.pbio.1001779">doi:10.1371/journal.pbio.1001779</a></h6>
                     <h2 id="checklist">Checklist</h2>
-                        <h3>Data Planning</h3>
-                        <input type="checkbox"> Item 1 <br/>
-                        <p>Think about this before you check.</p>
-                        <input type="checkbox"> Item 2 <br/>
-                        <p>Think about this before you check.</p>
-                        <h3>Metadata Management</h3>
-                        <input type="checkbox"> Item 3 <br/>
-                        <p>Think about this before you check.</p>
-                        <input type="checkbox"> Item 4 <br/>
-                        <p>Think about this before you check.</p>
-                        <input type="checkbox"> Item 5 <br/>
-                        <p>Think about this before you check.</p>
-                        <input type="checkbox"> Item 6 <br/>
-                        <p>Think about this before you check.</p>
-                        <h3>Licensing</h3>
-                        <input type="checkbox"> Item 7 <br/>
-                        <p>Think about this before you check.</p>
-                        <input type="checkbox"> Item 8 <br/>
-                        <p>Think about this before you check.</p>
+                        <h3>Document</h3>
+                        <input type="checkbox"> Naming conventions <br/>
+                        <p>Decide on a naming convention to be used for your files and folders and document it.</p>
+                        <input type="checkbox"> Organization <br/>
+                        <p>Determine the best file and folder organization structure to provide context to your files.
+                        It also makes it easier to references files in your code.</p>
+                        <input type="checkbox"> Codebook <br/>
+                        <p>Write up a codebook for your data set and keep it with your data files.  List variables, code names,
+                          and value ranges, as well as how null or missing data will be treated.</p>
+                        <input type="checkbox"> Code <br/>
+                        <p>Flag code with a /*comment*/ to help others identify what is going on in different
+                        parts of your code.</p>
+                        <input type="checkbox"> Consistency <br/>
+                        <p>Share your documentation with everyone on the research team so data is treated consistently.</p>
+                        <h3>Protect</h3>
+                        <input type="checkbox"> Anonymize <br/>
+                        <p>If your data is about human subjects, endangered species or protected areas, consider how
+                        data can be anonymized or aggregated to protect them.</p>
+                        <input type="checkbox"> Informed Consent<br/>
+                        <p>For data with human subjects, get informed consent at the beginning of their participation
+                        in the research so you don't have to try to go back and get it later.</p>
+                        <input type="checkbox"> Backup <br/>
+                        <p>To minimize the possibility of data loss, devise a plan for backing up your data in three
+                        places (e.g. office, home, cloud) and three ways (e.g. internal hard drive, external media, server).</p>
+                        <input type="checkbox"> Version Control <br/>
+                        <p>Utilize tools and come up with a plan to manage version control of your data.</p>
+                        <h3>Share</h3>
+                        <input type="checkbox"> Local Policies <br/>
+                        <p>Check your institution's intellectual property policy for regulations regarding sharing
+                        research data.</p>
+                        <input type="checkbox"> Public Access <br/>
+                        <p>Identify a place where code &amp; data will be made available.  Seriously consider
+                        using a CLOCKSS supporting repository.</p>
+                        <input type="checkbox"> Permanent Identifier <br/>
+                        <p>Get a permanent identifier for code and data and include it in your publications citing
+                        your data set.</p>
+                        <input type="checkbox"> License <br/>
+                        <p>Assign a license so others know what they are allowed to do with your data and code.</p>
+                        <input type="checkbox"> Data Reuse Plan <br/>
+                        <p>Write up a Data Reuse Plan and keep it with your data files.</p>
+                        <input type="checkbox"> Data Management Plan <br/>
+                        <p>If the funding agency for your project requires a Data Management Plan, consider
+                        sharing it with your data so others can live by your example.</p>
 
 
                     <h2 id="help">Help</h2>
@@ -144,7 +169,7 @@
                 </p>
             </div>
         </footer>
-        
+
         <!-- Cousous libraries for formating and bootstrap -->
         <script src="http://couscous.io/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="http://couscous.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
