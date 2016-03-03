@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checklist</title>
+    <meta name="description" content="Data Re-use Checklist Template">
+    <link rel="icon" type="image/ico" href="https://mozillascience.org/img/favicon.ico">
+
+    <link href="http://couscous.io/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://couscous.io/bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://couscous.io/css/prettify.tomorrow-night-eighties.css" rel="stylesheet">
+    <link href="http://couscous.io/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+</head>
+<style>
+    .navbar-default .navbar-brand {
+        color: #D1DDF1;
+        font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    }
+    .navbar-header:hover .navbar-brand:hover  {
+        color: #86AAE4;
+    }
+    ::selection {
+        color: #86AAE4;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #86AAE4;
+    }
+    ::selection {
+        color: #86AAE4;
+    }
+    a {
+        color: #1e5eb6;
+    }
+    a:hover { 
+        color: #86AAE4;
+    }
+    ::selection {
+        text-shadow: none;
+        background: #86AAE4;
+    }
+</style>
+
+<body class="">
+
+    <div id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="https://auremoser.github.io/checklist" class="navbar-brand">Planning for Data Reuse Checklist</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://auremoser.github.io/checklist">Checklist</a></li>
+                    <li><a href="https://docs.google.com/presentation/d/1kZd-ZD5lru5a7jIbyi9q8cBYCCAKRnIBSRvixYFtoF0/edit?pref=2&pli=1#slide=id.g1088c5b110_0_183" target="_blank">Deck</a></li>
+                    <li><a href="http://mozillascience.github.io/working-open-workshop/data_reuse/" target="_blank">Handout</a></li>
+                    <li><a href="https://github.com/mozillascience/working-open-workshop/blob/gh-pages/handouts/data_reuse_plan_template.md" target="_blank">Template</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li>
+                        <a href="https://github.com/auremoser/checklist" target="_blank">
+                            <i class="fa fa-github"></i> GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li>
+                            <a href="#start">Get started</a>
+                        </li>
+                        <li>
+                            <a href="#checklist">Checklist</a>
+                        </li>
+                        <li>
+                            <a href="#help">Help</a>
+                        </li>
+                        <li>
+                            <a href="#contributing">Contributing</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section class="documentation col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h2 id="start">Getting Started</h2>
+                    <p>This checklist is designed to help you understand what someone outside your research project
+                      (or you in 5-10 years) would need to know about your data in order to build on your work.</p>
+                    <p><img src="img/journal.png" style="width:50%;" alt="" /></p>
+                    <h6 style="width:50%;">Image attribution: Roche DG, Lanfear R, Binning SA, Haff TM, Schwanz LE, et al. (2014) Troubleshooting Public Data Archiving: Suggestions to Increase Participation.  PLoS Biol 12(1): e1001779. <a href="doi:10.1371/journal.pbio.1001779">doi:10.1371/journal.pbio.1001779</a></h6>
+                    <h2 id="checklist">Checklist</h2>
+                        <h3>Document</h3>
+                        <input type="checkbox"> Naming conventions <br/>
+                        <p>Decide on a naming convention to be used for your files and folders and document it.</p>
+                        <input type="checkbox"> Organization <br/>
+                        <p>Determine the best file and folder organization structure to provide context to your files.
+                        It also makes it easier to references files in your code.</p>
+                        <input type="checkbox"> Codebook <br/>
+                        <p>Write up a codebook for your data set and keep it with your data files.  List variables, code names,
+                          and value ranges, as well as how null or missing data will be treated.</p>
+                        <input type="checkbox"> Code <br/>
+                        <p>Flag code with a /*comment*/ to help others identify what is going on in different
+                        parts of your code.</p>
+                        <input type="checkbox"> Consistency <br/>
+                        <p>Share your documentation with everyone on the research team so data is treated consistently.</p>
+                        <h3>Protect</h3>
+                        <input type="checkbox"> Anonymize <br/>
+                        <p>If your data is about human subjects, endangered species or protected areas, consider how
+                        data can be anonymized or aggregated to protect them.</p>
+                        <input type="checkbox"> Informed Consent<br/>
+                        <p>For data with human subjects, get informed consent at the beginning of their participation
+                        in the research so you don't have to try to go back and get it later.</p>
+                        <input type="checkbox"> Backup <br/>
+                        <p>To minimize the possibility of data loss, devise a plan for backing up your data in three
+                        places (e.g. office, home, cloud) and three ways (e.g. internal hard drive, external media, server).</p>
+                        <input type="checkbox"> Version Control <br/>
+                        <p>Utilize tools and come up with a plan to manage version control of your data.</p>
+                        <h3>Share</h3>
+                        <input type="checkbox"> Local Policies <br/>
+                        <p>Check your institution's intellectual property policy for regulations regarding sharing
+                        research data.</p>
+                        <input type="checkbox"> Public Access <br/>
+                        <p>Identify a place where code &amp; data will be made available.  Seriously consider
+                        using a CLOCKSS supporting repository.</p>
+                        <input type="checkbox"> Permanent Identifier <br/>
+                        <p>Get a permanent identifier for code and data and include it in your publications citing
+                        your data set.</p>
+                        <input type="checkbox"> License <br/>
+                        <p>Assign a license so others know what they are allowed to do with your data and code.</p>
+                        <input type="checkbox"> Data Reuse Plan <br/>
+                        <p>Write up a Data Reuse Plan and keep it with your data files.</p>
+                        <input type="checkbox"> Data Management Plan <br/>
+                        <p>If the funding agency for your project requires a Data Management Plan, consider
+                        sharing it with your data so others can live by your example.</p>
+
+
+                    <h2 id="help">Help</h2>
+                        <p>If you have questions about this project you can submit an issue <a href="https://github.com/auremoser/checklist/issues">here on GitHub</a> or you can contact Steph directly at ...</a>.</p>
+                    <h2 id="contributing">Contributing</h2>
+                        <p>If you have fixed a bug with the checklist feel free to open a pull request and we will review and merge the request.</p>
+                        <p>We'd like to see what you can do with this, feel free to fork.</p>
+                </section>
+            </div> <!-- End row div -->
+        </div> <!-- End container-fluid div -->
+
+        <footer>
+            <div class="container">
+                <p>
+                    <a href="https://github.com/auremoser/checklist">Edit this page on GitHub</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- Cousous libraries for formating and bootstrap -->
+        <script src="http://couscous.io/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="http://couscous.io/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="http://couscous.io/bower_components/google-code-prettify/src/prettify.js"></script>
+
+        <script>
+            $(function() {
+                $("section h1").wrap('<div class="page-header" />');
+                $("pre").addClass('prettyprint');
+                prettyPrint();
+            });
+        </script>
+        <!-- End Library Code -->
+
+    <!-- HT to the Cousous project for Markdown to HTML templates and to the Bootstrap Boilerplate template -->
+</body>
+</html>
