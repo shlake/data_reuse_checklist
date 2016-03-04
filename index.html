@@ -43,7 +43,7 @@
     a {
         color: #1e5eb6;
     }
-    a:hover { 
+    a:hover {
         color: #86AAE4;
     }
     ::selection {
@@ -108,50 +108,85 @@
                     <p><img src="img/journal.png" style="width:50%;" alt="" /></p>
                     <h6 style="width:50%;">Image attribution: Roche DG, Lanfear R, Binning SA, Haff TM, Schwanz LE, et al. (2014) Troubleshooting Public Data Archiving: Suggestions to Increase Participation.  PLoS Biol 12(1): e1001779. <a href="doi:10.1371/journal.pbio.1001779">doi:10.1371/journal.pbio.1001779</a></h6>
                     <h2 id="checklist">Checklist</h2>
-                        <h3>Document</h3>
-                        <input type="checkbox"> Naming conventions <br/>
-                        <p>Decide on a naming convention to be used for your files and folders and document it.</p>
-                        <input type="checkbox"> Organization <br/>
-                        <p>Determine the best file and folder organization structure to provide context to your files.
-                        It also makes it easier to references files in your code.</p>
-                        <input type="checkbox"> Codebook <br/>
-                        <p>Write up a codebook for your data set and keep it with your data files.  List variables, code names,
-                          and value ranges, as well as how null or missing data will be treated.</p>
-                        <input type="checkbox"> Code <br/>
-                        <p>Flag code with a /*comment*/ to help others identify what is going on in different
-                        parts of your code.</p>
-                        <input type="checkbox"> Consistency <br/>
-                        <p>Share your documentation with everyone on the research team so data is treated consistently.</p>
-                        <h3>Protect</h3>
-                        <input type="checkbox"> Anonymize <br/>
-                        <p>If your data is about human subjects, endangered species or protected areas, consider how
-                        data can be anonymized or aggregated to protect them.</p>
-                        <input type="checkbox"> Informed Consent<br/>
-                        <p>For data with human subjects, get informed consent at the beginning of their participation
-                        in the research so you don't have to try to go back and get it later.</p>
-                        <input type="checkbox"> Backup <br/>
-                        <p>To minimize the possibility of data loss, devise a plan for backing up your data in three
-                        places (e.g. office, home, cloud) and three ways (e.g. internal hard drive, external media, server).</p>
-                        <input type="checkbox"> Version Control <br/>
-                        <p>Utilize tools and come up with a plan to manage version control of your data.</p>
-                        <h3>Share</h3>
-                        <input type="checkbox"> Local Policies <br/>
-                        <p>Check your institution's intellectual property policy for regulations regarding sharing
-                        research data.</p>
-                        <input type="checkbox"> Public Access <br/>
-                        <p>Identify a place where code &amp; data will be made available.  Seriously consider
-                        using a CLOCKSS supporting repository.</p>
-                        <input type="checkbox"> Permanent Identifier <br/>
-                        <p>Get a permanent identifier for code and data and include it in your publications citing
-                        your data set.</p>
-                        <input type="checkbox"> License <br/>
-                        <p>Assign a license so others know what they are allowed to do with your data and code.</p>
-                        <input type="checkbox"> Data Reuse Plan <br/>
-                        <p>Write up a Data Reuse Plan and keep it with your data files.</p>
-                        <input type="checkbox"> Data Management Plan <br/>
-                        <p>If the funding agency for your project requires a Data Management Plan, consider
-                        sharing it with your data so others can live by your example.</p>
-
+                        <h3>WHAT</h3>
+                        <input type="checkbox"> Title of the data set <br/>
+                        <ul>
+                          <li>be descriptive, provide context, more than just the filename</li>
+                          <ul>
+                            <li><em>Example:</em> “Migration patterns on Columbia River Delta” NOT “final.csv”</li>
+                          </ul>
+                        </ul>
+                        <input type="checkbox"> Link to related research publication <br/>
+                        <ul>
+                          <li>full citation and/or permanent link at a bare minimum</li>
+                          <ul>
+                            <li><em>Example:</em> Forstmann BU, et al. (2014) Multi-modal ultra-high resolution
+                              structural 7-Tesla MRI data repository. Scientific Data, 1:140050.
+                              <a href="http://www.nature.com/articles/sdata201450">(http://www.nature.com/articles/sdata201450)</a></li>
+                          </ul>
+                        </ul>
+                        <h3>WHO</h3>
+                        <input type="checkbox"> Person/s or organization responsible for collection of the data <br/>
+                        <ul>
+                          <li>Principle Investigator/s or research group that collected the data</li>
+                          <ul>
+                            <li><em>Example:</em> Dr. Phoebe Marshwana, Agriculture Lab, Michigan State University</li>
+                          </ul>
+                        </ul>
+                        <input type="checkbox"> Contact person / group if there are further questions about the data set <br/>
+                        <ul>
+                          <li>consider a lab email or other contact method that won’t change as people move on in their careers</li>
+                          <ul>
+                            <li><em>Example:</em> Climate Impacts Group, University of Washington: cig @ uw.edu</li>
+                          </ul>
+                        </ul>
+                        <h3>WHERE</h3>
+                        <input type="checkbox"> Location/s data was collected <br/>
+                        <ul>
+                          <li>can be multiple locations, geographic range.  Use geographic coordinates, if possible</li>
+                          <ul>
+                            <li><em>Example:</em> Skukuza, Swaziland; N -24.9916  degrees, W 31.5874 degrees</li>
+                          </ul>
+                        </ul>
+                        <input type="checkbox"> Location of published data <br/>
+                        <ul>
+                          <li>where someone can access the data set, preferably a repository that provides a permanent link to the data</li>
+                          <ul>
+                            <li><em>Example:</em> UCSD Digital Collections repository: <a href="ttp://dx.doi.org/10.6075/J08G8HM2">
+                              http://dx.doi.org/10.6075/J08G8HM2</a></li>
+                          </ul>
+                        </ul>
+                        <h3>WHEN</h3>
+                        <input type="checkbox"> Date/s data were collected <br/>
+                        <ul>
+                          <li>use the international standard date format (YYYY-MM-DD hh:mm.ss) and try to be as specific as possible</li>
+                          <ul>
+                            <li><em>Example:</em> 2015-07-01 to 2015-12-31</li>
+                          </ul>
+                        </ul>
+                        <h3>HOW</h3>
+                        <input type="checkbox"> Methods used to collect the data <br/>
+                        <ul>
+                          <li>think of the methodology section of the related publication</li>
+                          <ul>
+                            <li><em>Simplified example:</em>Minimum and maximum observed temperature for
+                              each day was calculated at morning high tide using CoolRead thermometers
+                              calibrated using the XYZ method</li>
+                          </ul>
+                        </ul>
+                        <input type="checkbox"> Methods used to process the data <br/>
+                        <ul>
+                          <li>description of how data was cleaned including how null or missing data were handled</li>
+                          <ul>
+                            <li><em>Example:</em> Differences in site mortality were determined through survdiff tests
+                              performed using X software version 2.10.3.  Comparisons with a p-value less than 0.05 (P gt 0.05) were considered different.</li>
+                          </ul>
+                          <li>if you wrote code for processing the data, provide information on where it can be found</li>
+                          <ul>
+                            <li><em>Example:</em> Raw data and scripts used in analysis are available in a GitHub
+                              repository: <a href="https://github.com/rjleveque/tohoku2011-paper1">https://github.com/rjleveque/tohoku2011-paper1</a></li>
+                          </ul>
+                        </ul>
 
                     <h2 id="help">Help</h2>
                         <p>If you have questions about this project you can submit an issue <a href="https://github.com/auremoser/checklist/issues">here on GitHub</a> or you can contact Steph directly at ...</a>.</p>
