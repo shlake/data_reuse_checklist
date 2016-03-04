@@ -109,16 +109,16 @@
                     <h6 style="width:50%;">Image attribution: Roche DG, Lanfear R, Binning SA, Haff TM, Schwanz LE, et al. (2014) Troubleshooting Public Data Archiving: Suggestions to Increase Participation.  PLoS Biol 12(1): e1001779. <a href="doi:10.1371/journal.pbio.1001779">doi:10.1371/journal.pbio.1001779</a></h6>
                     <h2 id="checklist">Checklist</h2>
                         <h3>WHAT</h3>
-                        <input type="checkbox"> Title of the data set <br/>
+                        <input type="checkbox"> What is the title of the data set <br/>
                         <ul>
-                          <li>be descriptive, provide context, more than just the filename</li>
+                          <li>List a title that goes beyond just the filename.  Be descriptive, provide context.</li>
                           <ul>
                             <li><em>Example:</em> “Migration patterns on Columbia River Delta” NOT “final.csv”</li>
                           </ul>
                         </ul>
-                        <input type="checkbox"> Link to related research publication <br/>
+                        <input type="checkbox"> Are there any related research publications for this data? <br/>
                         <ul>
-                          <li>full citation and/or permanent link at a bare minimum</li>
+                          <li>Add a citation to any relevant publications for this dataset with a link, preferably a permanent URL.</li>
                           <ul>
                             <li><em>Example:</em> Forstmann BU, et al. (2014) Multi-modal ultra-high resolution
                               structural 7-Tesla MRI data repository. Scientific Data, 1:140050.
@@ -126,38 +126,39 @@
                           </ul>
                         </ul>
                         <h3>WHO</h3>
-                        <input type="checkbox"> Person/s or organization responsible for collection of the data <br/>
+                        <input type="checkbox"> Who is responsible for the data <br/>
                         <ul>
-                          <li>Principle Investigator/s or research group that collected the data</li>
+                          <li>List principle investigator/s or research group that collected or contributed to the data</li>
                           <ul>
                             <li><em>Example:</em> Dr. Phoebe Marshwana, Agriculture Lab, Michigan State University</li>
                           </ul>
                         </ul>
-                        <input type="checkbox"> Contact person / group if there are further questions about the data set <br/>
+                        <input type="checkbox"> Who can answer questions about the data?<br/>
                         <ul>
-                          <li>consider a lab email or other contact method that won’t change as people move on in their careers</li>
+                          <li>Consider a lab email or other contact method that won’t change as people move on in their careers</li>
                           <ul>
                             <li><em>Example:</em> Climate Impacts Group, University of Washington: cig @ uw.edu</li>
                           </ul>
                         </ul>
                         <h3>WHERE</h3>
-                        <input type="checkbox"> Location/s data was collected <br/>
+                        <input type="checkbox"> Where was the data collected? <br/>
                         <ul>
                           <li>can be multiple locations, geographic range.  Use geographic coordinates, if possible</li>
                           <ul>
-                            <li><em>Example:</em> Skukuza, Swaziland; N -24.9916  degrees, W 31.5874 degrees</li>
+                            <li><em>Example:</em> Skukuza, Swaziland</li>
                           </ul>
                         </ul>
-                        <input type="checkbox"> Location of published data <br/>
+                        <input type="checkbox"> Where does the data live? <br/>
                         <ul>
-                          <li>where someone can access the data set, preferably a repository that provides a permanent link to the data</li>
+                          <li>add a link to the repository where data is shared, preferably using a permanent URL.  
+                          (Need help finding a repository? See the “Resource List”.)</li>
                           <ul>
                             <li><em>Example:</em> UCSD Digital Collections repository: <a href="ttp://dx.doi.org/10.6075/J08G8HM2">
                               http://dx.doi.org/10.6075/J08G8HM2</a></li>
                           </ul>
                         </ul>
                         <h3>WHEN</h3>
-                        <input type="checkbox"> Date/s data were collected <br/>
+                        <input type="checkbox"> When was the data collected <br/>
                         <ul>
                           <li>use the international standard date format (YYYY-MM-DD hh:mm.ss) and try to be as specific as possible</li>
                           <ul>
@@ -165,21 +166,22 @@
                           </ul>
                         </ul>
                         <h3>HOW</h3>
-                        <input type="checkbox"> Methods used to collect the data <br/>
+                        <input type="checkbox"> How was the data collected? <br/>
                         <ul>
-                          <li>think of the methodology section of the related publication</li>
+                          <li>Think of the steps taken to collect the data, the instruments and software used</li>
                           <ul>
                             <li><em>Simplified example:</em>Minimum and maximum observed temperature for
                               each day was calculated at morning high tide using CoolRead thermometers
                               calibrated using the XYZ method</li>
                           </ul>
                         </ul>
-                        <input type="checkbox"> Methods used to process the data <br/>
+                        <input type="checkbox"> How was the data processed <br/>
                         <ul>
-                          <li>description of how data was cleaned including how null or missing data were handled</li>
+                          <li>Steps taken to clean and analyze the data including tools & software, how were null or missing data handled</li>
                           <ul>
                             <li><em>Example:</em> Differences in site mortality were determined through survdiff tests
-                              performed using X software version 2.10.3.  Comparisons with a p-value less than 0.05 (P gt 0.05) were considered different.</li>
+                              performed using X software version 2.10.3.  Comparisons with a p-value less than 0.05 (P gt 0.05) were 
+                              considered different. Null data is coded as 777 and missing data with 999.</li>
                           </ul>
                           <li>if you wrote code for processing the data, provide information on where it can be found</li>
                           <ul>
@@ -188,11 +190,11 @@
                           </ul>
                         </ul>
 
-                    <h2 id="help">Help</h2>
-                        <p>If you have questions about this project you can submit an issue <a href="https://github.com/auremoser/checklist/issues">here on GitHub</a> or you can contact Steph directly at ...</a>.</p>
-                    <h2 id="contributing">Contributing</h2>
-                        <p>If you have fixed a bug with the checklist feel free to open a pull request and we will review and merge the request.</p>
-                        <p>We'd like to see what you can do with this, feel free to fork.</p>
+                    <h2 id="help">Feedback</h2>
+                        <p>If you have suggestions for improving this checklist, feel free to submit an issue on <a href="https://github.com/mozillascience/checklist/issues">
+                            GitHub here</a> or you can contact Mozilla Science Lab at 
+                            <a href="mailto:sciencelab@mozillafoundation.org">sciencelab@mozillafoundation.org</a>.  
+                            We’d like to see what you can do with this.  Please fork and make it your own!</p>
                 </section>
             </div> <!-- End row div -->
         </div> <!-- End container-fluid div -->
